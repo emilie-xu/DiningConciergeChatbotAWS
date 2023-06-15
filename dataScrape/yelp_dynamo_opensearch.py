@@ -28,16 +28,6 @@ from urllib.parse import quote
 #     #from urllib import urlencode
 
 
-#### HIDE LATER ####
-CLIENT_ID = "HmKaHy2CxQ1DOhkLHEV0og"
-API_KEY = "fDP9Sl2PI9l0ljStXBx-73mkYQdPUCJHaCNTRVeQgN8Uzc1ik_4XYifRnEBm194FoEhSEp0CiqwPO7XMyWD8xzAB5VkJJRoEMFdY1xaG0XD69I7KONoIqX9duyn5Y3Yx"
-
-access_key = "AKIA2RSVURMUFIH74CRP"
-secret_key = "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"
-region = 'us-east-1'
-esEndPoint = 'https://search-restaurantdomain-uuzfi2vpxvqmb4ex7jod2jo6dm.us-east-1.es.amazonaws.com/'
-####################
-
 def create_table():
     dynamodb = boto3.resource("dynamodb", region_name=region, aws_access_key_id = access_key, aws_secret_access_key = secret_key)
     params = {
